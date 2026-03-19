@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CFC Fund — News</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* BASE */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ECE8E1;
+    color: #3B0A2A;
+    margin: 0;
+}
+.page {
+    padding: 100px 20px 80px;
+}
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* HEADER */
+.news-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.news-header .line {
+    width: 120px;
+    height: 1px;
+    background: #3B0A2A;
+    margin-right: 20px;
+}
+
+.label {
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+/* TITLE */
+.news-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    line-height: 1.2;
+    color: #2A061E;
+    margin-bottom: 30px;
+}
+
+/* META */
+.news-meta {
+    font-size: 14px;
+    color: #8C8172;
+    margin-bottom: 40px;
+}
+
+/* LEAD */
+.news-lead {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* TEXT */
+.news-content p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+/* BACK BUTTON */
+.back {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.back a {
+    text-decoration: none;
+    color: #6B4C5A;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.back a:hover {
+    opacity: 0.7;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="back">
+<a href="#" onclick="goBack()" class="back-link">← Back to Home</a>
+</div>
+
+<div class="news-header">
+<div class="line"></div>
+<span class="label">NEWS</span>
+</div>
+
+<h1 class="news-title">
+CFC Enters into Long-Term Strategic Partnership with Shohin Airlines
+</h1>
+
+<div class="news-meta">
+March 16, 2026 · CFC Announcement
+</div>
+
+<div class="news-lead">
+CFC has signed a five-year strategic investment agreement with Shohin Airlines,
+supporting fleet expansion and aviation infrastructure development.
+</div>
+
+<div class="news-content">
+
+<p>
+CFC s.r.o., osoba rizikového kapitálu has entered into a long-term strategic partnership
+with Shohin Airlines under a five-year investment framework.
+</p>
+
+<p>
+With a planned investment program exceeding USD 200 million, the partnership aims to
+support fleet expansion, enhance operational capabilities, and strengthen aviation
+infrastructure in the region.
+</p>
+
+<p>
+This transaction reflects CFC’s broader investment strategy focused on infrastructure
+and technology-driven sectors in high-growth markets.
+</p>
+
+<p>
+We believe that civil aviation in Tajikistan offers meaningful long-term potential,
+and we are pleased to support Shohin Airlines in this next stage of development.
+</p>
+
+<p>
+CFC values the constructive engagement of the Shohin Airlines team and looks forward
+to building a strong and sustainable long-term cooperation.
+</p>
+
+</div>
+
+<div class="back">
+<a href="#" onclick="goBack()" class="back-link">← Back to Home</a>
+</div>
+
+</div>
+
+<script>
+function goBack() {
+    const ref = document.referrer;
+
+    if (ref.includes('/homecz')) {
+        window.location.href = '/cfc-fund/homecz/';
+    } else if (ref.includes('/home')) {
+        window.location.href = '/cfc-fund/home/';
+    } else {
+        window.location.href = '/cfc-fund/';
+    }
+}
+</script>
+
+</body>
+</html>
