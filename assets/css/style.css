@@ -490,8 +490,6 @@ img:hover {
     line-height: 1.9;
     color: #6B4C5A;
     position: relative
-    display: block;
-    z-index: 1;
 }
 
 /* BACK LINK */
