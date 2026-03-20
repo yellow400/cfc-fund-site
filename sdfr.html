@@ -1,143 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <body>
 <meta charset="UTF-8">
-<title>SDFR Document</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-    font-family: 'Inter', sans-serif;
-    background: #ECE8E1;
-    color: #3B0A2A;
-    line-height: 1.6;
-    margin: 0;
-}
-.page {
-    padding: 100px 20px 80px;
-}
-/* контейнер */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
+<title>SDFR Document – CFC Fund</title>
 
-/* линия + label как на сайте */
-.section-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.section-header .line {
-    width: 120px;
-    height: 1px;
-    background: #3B0A2A;
-    margin-right: 20px;
-}
-
-.section-header span {
-    font-size: 13px;
-    letter-spacing: 3px;
-}
-
-.legal-page {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-.legal-page h1 {
-    font-size: 48px;
-    font-weight: 300;
-    margin-bottom: 40px;
-    color: #B8ADA0;
-}
-
-.legal-meta {
-    margin-bottom: 60px;
-}
-
-.legal-meta p {
-    font-size: 14px;
-    color: #8C8172;
-    margin-bottom: 6px;
-}
-
-.legal-page h2 {
-    margin-top: 60px;
-    margin-bottom: 16px;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #3B0A2A;
-}
-
-.legal-page p {
-    font-size: 15px;
-    line-height: 1.9;
-    color: #6B4C5A;
-    margin-bottom: 14px;
-}
-
-.legal-page ul {
-    margin: 16px 0 24px 20px;
-}
-
-.legal-page li {
-    margin-bottom: 8px;
-}
-.legal-page pre {
-    white-space: pre-wrap;
-    font-family: inherit;
-    line-height: 1.9;
-    color: #6B4C5A;
-}
-
-.back-link.bottom {
-    display: block;
-    margin-top: 80px;
-}
-
-.back-link {
-    display: inline-block;
-    margin-bottom: 40px;
-
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    color: #3B0A2A;
-    text-decoration: none;
-
-    opacity: 0.7;
-    transition: all 0.3s ease;
-}
-
-/* убираем синий visited */
-.back-link:visited {
-    color: #3B0A2A;
-}
-
-/* hover эффект */
-.back-link:hover {
-    opacity: 1;
-}
-</style>
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<div class="legal-page">
- 	<!-- кнопка -->
+<body>
+
+<section class="page">
+<div class="container">
+
+<!-- BACK -->
 <a href="#" onclick="goBack()" class="back-link">← Back to Home</a>
+
+<!-- HEADER -->
+<div class="section-header">
+    <div class="line"></div>
+    <span class="label">SDFR</span>
+</div>
+
+<h1 class="page-title">SDFR Document</h1>
+
+<div class="legal-text">
+
+<pre>
+(вставляешь свой текст без изменений)
+</pre>
+
+</div>
+
+<a href="#" onclick="goBack()" class="back-link bottom">← Back to Home</a>
+
+</div>
+</section>
 
 <script>
 function goBack() {
-    if (document.referrer.includes('/homecz')) {
+    const ref = document.referrer;
+
+    if (ref.includes('/homecz')) {
         window.location.href = '/cfc-fund/homecz/';
-    } else if (document.referrer.includes('/home')) {
+    } else if (ref.includes('/home')) {
         window.location.href = '/cfc-fund/home/';
     } else {
         window.location.href = '/cfc-fund/';
@@ -145,56 +53,5 @@ function goBack() {
 }
 </script>
 
-    <!-- header -->
-    <div class="section-header">
-        <div class="line"></div>
-        <span>SDFR Document</span>
-    </div>
-
-    <h1 class="legal-title">
-        SDFR Document
-    </h1>
-<pre>
-Povinné informace uveřejňované dle nařízení (EU) č. 2019/2088 („SFDR“)
-
-1.O společnosti
-
-Společnost CFC s.r.o., osoba rizikového kapitálu, se sídlem Kurzova 2222/16, Stodůlky, 155 00 Praha 5, IČO: 217 05 011, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, spisová značka C 405309 (dále jen „Společnost“) tímto z pozice účastníka finančního trhu – alternativního fondu dle § 15 ZISIF v souladu s nařízením Evropského parlamentu a Rady (EU) 2019/2088 ze dne 27. listopadu 2019 o zveřejňování informací souvisejících s udržitelností v odvětví finančních služeb (dále jen „SFDR“) informuje o začleňování rizik týkajících se udržitelnosti a zohledňování nepříznivých dopadů na udržitelnost do jejich postupů a o poskytování dalších informací souvisejících s udržitelností ve smyslu SFDR. Cílem SFDR je především zvýšení transparentnosti vůči klientům, zejména s ohledem na environmentální a sociální udržitelnost.
-
-2.Udržitelné investice
-
-Udržitelnou investicí je investice do hospodářské činnosti, která přispívá k environmentálním cílům, jakou jsou investice měřené například klíčovými ukazateli pro účinnost zdrojů ohledně využívání energie, energie z obnovitelných zdrojů, surovin, vody a půdy, produkce odpadů, emisí skleníkových plynů, nebo ukazateli jejího dopadu na biologickou rozmanitost a oběhové hospodářství, nebo investice do hospodářské činnosti, která přispívá k sociálním cílům, zejména investice, která přispívá k řešení nerovnosti, nebo investice podporující sociální soudržnost, sociální integraci a pracovněprávní vztahy nebo investice do lidského kapitálu nebo hospodářsky či sociálně znevýhodněných komunit, za předpokladu, že tyto investice významně nepoškozují žádný z uvedených cílů a společnosti, do nichž je investováno, dodržují postupy řádné správy a řízení, zejména ohledně řádných struktur řízení, vztahů se zaměstnanci, odměňování příslušných zaměstnanců a dodržování daňových předpisů.
-
-3.Faktory udržitelnosti
-
-Faktory udržitelnosti jsou enviromentální, sociální a zaměstnanecké otázky, dodržování lidských práv a otázky boje proti korupci a úplatkářství.
-
-4.Nezohledňování nepříznivých dopadů investičních rozhodnutí na faktory udržitelnosti
-
-Společnost tímto informuje investory, že v současnosti nezohledňuje nepříznivé dopady investičních rozhodnutí na faktory udržitelnosti. S ohledem na typy aktiv, které jsou nabývány do portfolia fondu, velikost Společnosti, rozsah poskytovaných služeb a investiční cíle, není zohledňování nepříznivých dopadů investičních rozhodnutí na faktory udržitelnosti v současné době považováno za relevantní.
-Společnost do budoucna nevylučuje zohledňování nepříznivých dopadů investičních rozhodnutí na faktory udržitelnosti v rámci poskytování služeb. Společnost bude uvedenou oblast monitorovat a nejméně jednou ročně přezkoumá, zdali nedošlo ke změně výše uvedeného.
-
-5.Nezačleňování rizik týkajících se udržitelnosti
-
-Rizika týkající se udržitelnosti, tedy nepříznivé události v oblasti environmentální a sociální udržitelnosti, stejně jako ostatní rizika, kterým Společnost při své činnosti čelí, mohou mít negativní dopad na Společnost, potažmo na klienty.
-Rizika týkající se udržitelnosti zahrnují především environmentální (emise skleníkových plynů a související globální oteplování, energeticky náročný styl života, odpadové znečištění) a sociální problematiku (genderová diskriminace, ochrana lidských práv, dětská práce, ochrana zdraví pracovníků a další).
-Společnost tímto informuje klienty, že v současnosti nezačleňuje rizika udržitelnosti jako samostatnou kategorii v rámci hodnocení rizik, a to především s ohledem na velikost Společnosti, typy aktiv nabývaných do portfolia fondu a dále na rozsah a způsob poskytovaných služeb.
-Společnost do budoucna nevylučuje zohledňování nepříznivých dopadů investičních rozhodnutí na faktory udržitelnosti v rámci poskytování služeb. Společnost bude uvedenou oblast monitorovat a nejméně jednou ročně přezkoumá, zdali nedošlo ke změně výše uvedeného.
-
---------
-CFC s.r.o., osoba rizikového kapitálu, se sídlem Kurzova 2222/16, Stodůlky, 155 00 Praha 5, IČO: 217 05 011, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, spisová značka C 405309, www.cfc-fund.com, e-mail: info@cfc-fund.com, tel. +371 29259169.
-Upozornění: CFC je privátní alternativní fond a je spravován společností CFC s.r.o., osoba rizikového kapitálu, jež je zapsána v seznamu osob provádějících správu majetku srovnatelnou s obhospodařováním dle § 15 ZISIF vedeném ČNB. Činnost společnosti ani fondu nepodléhá dohledu ČNB. Správa majetku společností je určena pouze pro privátní okruh oslovených investorů a pro kvalifikované investory v souladu se ZISIF, přičemž fond není oprávněn provádět tzv. test vhodnosti. Minimální výše investice do fondu činí 125 000 EUR.
-
----------
-
-6. Zásady odměňování s ohledem na začleňování rizik týkajících se udržitelnosti
-Společnost uplatňuje jiná hlavní pravidla a zásady odměňování, která jsou nastavena v souladu se sektorovou regulací a která jsou dlouhodobě udržitelná pro Společnost. I když zásady neobsahují jako hlavní kritéria snižování rizik udržitelnosti, nejsou nastaveny způsobem, který by nepříznivé dopady investičních rozhodnutí na udržitelnost podporoval.
-Podkladové investice tohoto finančního produktu nezohledňují kritéria EU pro environmentálně udržitelné hospodářské činnosti.
-
-V Praze dne 31. 7. 2024
-CFC s.r.o., osoba rizikového kapitálu
-</pre>
-<a href="#" onclick="goBack()" class="back-link">← Back to Home</a>
-</div>
 </body>
 </html>

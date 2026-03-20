@@ -392,3 +392,50 @@ img:hover {
         gap: 50px;
     }
 }
+
+/* LEGAL PAGE */
+
+.page {
+    padding: 120px 0;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #B8ADA0;
+    margin-bottom: 40px;
+}
+
+.legal-text {
+    max-width: 900px;
+}
+
+.legal-text pre {
+    white-space: pre-wrap;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #6B4C5A;
+}
+
+/* BACK LINK */
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3B0A2A;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    opacity: 1;
+}
+
+.back-link.bottom {
+    margin-top: 60px;
+}
