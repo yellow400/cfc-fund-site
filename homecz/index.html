@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html><html lang="cs"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CFC Fund</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&amp;family=Inter:wght@300;400;500&amp;display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
 <section id="welcome" class="hero">
     <div class="container hero-grid">
         <div class="hero-left">
-            <div class="hero-header">
+            <div class="section-header">
             <div class="line"></div>
             <span class="label">ÚVOD</span>
         </div>
@@ -330,8 +330,8 @@ CFC s.r.o., osoba rizikového kapitálu je zapsána v registru ČNB podle § 15 
 
 <div class="docs-buttons">
 
-<a href="/guidelines.html" class="doc-btn">Směrnice pro řešení oznámení</a>
-<a href="/sdfr.html" class="doc-btn">SDFR</a>
+<a href="../guidelines.html" class="doc-btn">Směrnice pro řešení oznámení</a>
+<a href="../sdfr.html" class="doc-btn">SDFR</a>
 
 </div>
 
@@ -394,11 +394,13 @@ if ('scrollRestoration' in history) {
 </script>
 <script>
 const el = document.getElementById("email-protected");
-
+const user = "info";
+const domain = "cfc-fund.com";
+el.innerText = user + "@" + domain;
 el.addEventListener("copy", e => e.preventDefault());
 el.addEventListener("cut", e => e.preventDefault());
 el.addEventListener("contextmenu", e => e.preventDefault());
-</script>
+</script>>
 <script>
 function switchLang(lang) {
     const hash = window.location.hash;
@@ -406,7 +408,7 @@ function switchLang(lang) {
     if (lang === 'cz') {
         window.location.href = "/homecz/index.html" + hash;
     } else {
-        window.location.href = "/home" + hash;
+        window.location.href = "/home/index.html" + hash;
     }
 }
 </script>
