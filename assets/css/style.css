@@ -95,21 +95,21 @@ nav.nav-hidden {
     opacity: 0;
 }
 
-/* DISCLAIMER PAGE */
+/* ===== DISCLAIMER PAGE ===== */
 
 .logo-top {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 60px 0 40px;
 }
 
 .logo-top img {
-    max-width: 300px;
+    max-width: 280px;
     width: 100%;
 }
 
 .title {
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.4;
     text-align: center;
     margin-bottom: 40px;
@@ -118,7 +118,7 @@ nav.nav-hidden {
 
 .text {
     max-width: 900px;
-    margin: 0 auto 40px;
+    margin: 0 auto;
 }
 
 .text p {
@@ -130,7 +130,7 @@ nav.nav-hidden {
 
 .buttons {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .btn {
@@ -140,7 +140,7 @@ nav.nav-hidden {
     border: 1px solid #3B0A2A;
     text-decoration: none;
     color: #3B0A2A;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: all 0.3s ease;
