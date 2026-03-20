@@ -4,132 +4,28 @@
 <meta charset="UTF-8">
 <title>Notification Resolution Guidelines</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-body {
-    font-family: 'Inter', sans-serif;
-    background: #ECE8E1;
-    color: #3B0A2A;
-    line-height: 1.6;
-    margin: 0;
-}
-.page {
-    padding: 100px 20px 80px;
-}
-/* контейнер */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 80px 20px;
-}
-
-/* линия + label как на сайте */
-.section-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.section-header .line {
-    width: 120px;
-    height: 1px;
-    background: #3B0A2A;
-    margin-right: 20px;
-}
-
-.section-header span {
-    font-size: 13px;
-    letter-spacing: 3px;
-}
-
-.legal-page {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 0 20px;
-}
-
-.legal-page h1 {
-    font-size: 48px;
-    font-weight: 300;
-    margin-bottom: 40px;
-    color: #B8ADA0;
-}
-
-.legal-meta {
-    margin-bottom: 60px;
-}
-
-.legal-meta p {
-    font-size: 14px;
-    color: #8C8172;
-    margin-bottom: 6px;
-}
-
-.legal-page h2 {
-    margin-top: 60px;
-    margin-bottom: 16px;
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #3B0A2A;
-}
-
-.legal-page p {
-    font-size: 15px;
-    line-height: 1.9;
-    color: #6B4C5A;
-    margin-bottom: 14px;
-}
-
-.legal-page ul {
-    margin: 16px 0 24px 20px;
-}
-
-.legal-page li {
-    margin-bottom: 8px;
-}
-.legal-page pre {
-    white-space: pre-wrap;
-    font-family: inherit;
-    line-height: 1.9;
-    color: #6B4C5A;
-}
-
-.back-link.bottom {
-    display: block;
-    margin-top: 80px;
-}
-
-.back-link {
-    display: inline-block;
-    margin-bottom: 40px;
-
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    color: #3B0A2A;
-    text-decoration: none;
-
-    opacity: 0.7;
-    transition: all 0.3s ease;
-}
-
-/* убираем синий visited */
-.back-link:visited {
-    color: #3B0A2A;
-}
-
-/* hover эффект */
-.back-link:hover {
-    opacity: 1;
-}
-</style>
+<link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+<body>
 
-<div class="legal-page">
- 	<!-- кнопка -->
+<section class="page">
+<div class="container">
+
+<!-- BACK -->
+<a href="#" onclick="goBack()" class="back-link">← Back to Home</a>
+
+<!-- HEADER -->
+<div class="section-header">
+    <div class="line"></div>
+    <span class="label">GUIDELINES</span>
+</div>
+
+<!-- TITLE -->
+<h1 class="page-title">
+    Notification Resolution Guidelines
+</h1>
+
 <a href="#" onclick="goBack()" class="back-link">← Back to Home</a>
 
 <script>
@@ -144,15 +40,8 @@ function goBack() {
 }
 </script>
 
-    <!-- header -->
-    <div class="section-header">
-        <div class="line"></div>
-        <span>GUIDELINES</span>
-    </div>
-
-    <h1 class="legal-title">
-        Notification Resolution Guidelines
-    </h1>
+<!-- CONTENT -->
+<div class="legal-text">
 <pre>
 SMĚRNICE O ŘEŠENÍ OZNÁMENÍ
 O MOŽNÉM PROTIPRÁVNÍM JEDNÁNÍ (VNITŘNÍ OZNAMOVACÍ SYSTÉM)
@@ -345,7 +234,26 @@ Směrnice jakkoli postihován.
 11. POUČENÍ ŘEŠITELE OZNÁMENÍ
 11.1. Povinná osoba poučí Řešitele oznámení a Zástupce Řešitele oznámení bez zbytečného odkladu po jejich určení o povinnostech vyplývajících ze Zákona a této Směrnice a sepíše o tomto poučení s nimi písemný záznam.
 </pre>
-<a href="#" onclick="goBack()" class="back-link">← Back to Home</a>
 </div>
 
-</html>
+<!-- BACK -->
+<a href="#" onclick="goBack()" class="back-link bottom">← Back to Home</a>
+
+</div>
+</section>
+
+<script>
+function goBack() {
+    const ref = document.referrer;
+
+    if (ref.includes('homecz')) {
+        window.location.href = '/cfc-fund/homecz/';
+    } else if (ref.includes('home')) {
+        window.location.href = '/cfc-fund/home/';
+    } else {
+        window.location.href = '/cfc-fund/';
+    }
+}
+</script>
+
+</body>
