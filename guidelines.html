@@ -243,5 +243,22 @@ function goBack() {
     }
 }
 </script>
+<script>
+const lines = document.querySelectorAll(".line");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+        }
+    });
+}, {
+    threshold: 0.3
+});
+
+lines.forEach(line => {
+    observer.observe(line);
+});
+</script>
 </body>
 </html>
