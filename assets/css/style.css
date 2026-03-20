@@ -161,7 +161,7 @@ nav.nav-hidden {
 .section-header {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .line {
@@ -180,6 +180,13 @@ nav.nav-hidden {
     letter-spacing: 3px;
     margin-left: 20px;
 }
+.section-header .line {
+    width: 120px;
+    height: 1px;
+    background: #3B0A2A;
+    margin-right: 20px;
+}
+
 
 /* =========================
    HERO
