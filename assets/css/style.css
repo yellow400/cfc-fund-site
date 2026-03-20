@@ -502,6 +502,7 @@ img:hover {
     text-decoration: none;
     opacity: 0.7;
     transition: all 0.3s ease;
+    z-index: 10;
 }
 
 .back-link:hover {
