@@ -439,13 +439,13 @@ img:hover {
 
 /* ЛОГО — балансируем */
 .circle.logo img {
-    width: 300px;
+    width: 150px;
 }
 
 .circle.ring {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 160px;
+    height: 160px;
 }
 
 /* КОЛЬЦО ВРАЩАЕТСЯ */
