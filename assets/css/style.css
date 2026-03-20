@@ -464,14 +464,14 @@ img:hover {
     height: 2px;
     transform: translate(-50%, -50%);
     
-    background: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(59, 10, 42, 0.1) 20%,
-        rgba(59, 10, 42, 0.8) 50%,
-        rgba(59, 10, 42, 0.1) 80%,
-        transparent 100%
-    );
+background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(59, 10, 42, 0.05) 15%,
+    rgba(59, 10, 42, 0.9) 50%,
+    rgba(59, 10, 42, 0.05) 85%,
+    transparent 100%
+);
 
     animation: rotateCounter 25s linear infinite;
     transform-origin: center;
