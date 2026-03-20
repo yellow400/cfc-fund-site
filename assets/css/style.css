@@ -412,9 +412,10 @@ img:hover {
 
 .legal-text pre {
     white-space: pre-wrap;
-    font-family: inherit;
+    word-break: break-word;
+    font-family: 'Inter', sans-serif;
     font-size: 15px;
-    line-height: 1.9;
+    line-height: 1.8;
     color: #6B4C5A;
 }
 
