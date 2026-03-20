@@ -459,17 +459,19 @@ img:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 140%;
+
+    width: 160%;
     height: 2px;
-    transform: translate(-50%, -50%);
-    
+
+    transform: translate(-50%, -50%) rotate(45deg);
+
     background: linear-gradient(
         to right,
-        rgba(59, 10, 42, 0.7) 0%,
-        rgba(59, 10, 42, 0.15) 35%,
+        rgba(59, 10, 42, 0.8) 0%,
+        rgba(59, 10, 42, 0.2) 30%,
         transparent 50%,
-        rgba(59, 10, 42, 0.15) 65%,
-        rgba(59, 10, 42, 0.7) 100%
+        rgba(59, 10, 42, 0.2) 70%,
+        rgba(59, 10, 42, 0.8) 100%
     );
 
     animation: rotateCounter 25s linear infinite;
