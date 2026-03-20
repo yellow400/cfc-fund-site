@@ -95,6 +95,62 @@ nav.nav-hidden {
     opacity: 0;
 }
 
+/* DISCLAIMER PAGE */
+
+.logo-top {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-top img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2A061E;
+}
+
+.text {
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.text p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    color: #3B0A2A;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px;
+    border: 1px solid #3B0A2A;
+    text-decoration: none;
+    color: #3B0A2A;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #3B0A2A;
+    color: #ECE8E1;
+}
+
 /* =========================
    UNIVERSAL HEADER
 ========================= */
