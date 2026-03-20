@@ -468,14 +468,13 @@ img:hover {
 .page {
     padding: 120px 0;
 }
-.page-title {
-    pointer-events: none;
-}
+
 .page-title {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     color: #B8ADA0;
     margin-bottom: 40px;
+    pointer-events: none;
 }
 
 .legal-text {
