@@ -7,124 +7,41 @@
 <title>CFC Fund — News</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-
-/* BASE */
-body {
-    font-family: 'Inter', sans-serif;
-    background: #ECE8E1;
-    color: #3B0A2A;
-    margin: 0;
-}
-.page {
-    padding: 100px 20px 80px;
-}
-/* CONTAINER */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 80px 20px;
-}
-
-/* HEADER */
-.news-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.news-header .line {
-    width: 120px;
-    height: 1px;
-    background: #3B0A2A;
-    margin-right: 20px;
-}
-
-.label {
-    font-size: 13px;
-    letter-spacing: 3px;
-}
-
-/* TITLE */
-.news-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 56px;
-    line-height: 1.2;
-    color: #2A061E;
-    margin-bottom: 30px;
-}
-
-/* META */
-.news-meta {
-    font-size: 14px;
-    color: #8C8172;
-    margin-bottom: 40px;
-}
-
-/* LEAD */
-.news-lead {
-    font-size: 22px;
-    line-height: 1.6;
-    margin-bottom: 40px;
-}
-
-/* TEXT */
-.news-content p {
-    font-size: 16px;
-    line-height: 1.9;
-    margin-bottom: 20px;
-}
-
-/* BACK BUTTON */
-.back {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.back a {
-    text-decoration: none;
-    color: #6B4C5A;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
-}
-
-.back a:hover {
-    opacity: 0.7;
-}
-
-
-</style>
+<link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
 
+<section class="page">
 <div class="container">
 
-<div class="back">
-<a href="#" onclick="goBack()" class="back-link">← Back to Home</a>
+<!-- BACK -->
+<a href="javascript:void(0)" onclick="goBack()" class="back-link">← Back to Home</a>
+
+<!-- HEADER -->
+<div class="section-header">
+    <div class="line"></div>
+    <span class="label">INSIGHTS</span>
 </div>
 
-<div class="news-header">
-<div class="line"></div>
-<span class="label">NEWS</span>
-</div>
-
-<h1 class="news-title">
+<!-- TITLE -->
+<h1 class="page-title">
 CFC Enters into Long-Term Strategic Partnership with Shohin Airlines
 </h1>
 
+<!-- META -->
 <div class="news-meta">
 March 16, 2026 · CFC Announcement
 </div>
 
-<div class="news-lead">
+<!-- LEAD -->
+<p class="news-lead">
 CFC has signed a five-year strategic investment agreement with Shohin Airlines,
 supporting fleet expansion and aviation infrastructure development.
-</div>
+</p>
 
-<div class="news-content">
+<!-- CONTENT -->
+<div class="legal-text">
 
 <p>
 CFC s.r.o., osoba rizikového kapitálu has entered into a long-term strategic partnership
@@ -154,19 +71,19 @@ to building a strong and sustainable long-term cooperation.
 
 </div>
 
-<div class="back">
-<a href="#" onclick="goBack()" class="back-link">← Back to Home</a>
-</div>
+<!-- BACK -->
+<a href="javascript:void(0)" onclick="goBack()" class="back-link bottom">← Back to Home</a>
 
 </div>
+</section>
 
 <script>
 function goBack() {
     const ref = document.referrer;
 
-    if (ref.includes('/homecz')) {
+    if (ref.includes('homecz')) {
         window.location.href = '/cfc-fund/homecz/';
-    } else if (ref.includes('/home')) {
+    } else if (ref.includes('home')) {
         window.location.href = '/cfc-fund/home/';
     } else {
         window.location.href = '/cfc-fund/';

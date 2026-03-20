@@ -256,7 +256,17 @@ nav.nav-hidden {
     margin-top: 20px;
     font-size: 13px;
 }
+.news-meta {
+    font-size: 14px;
+    color: #8C8172;
+    margin-bottom: 30px;
+}
 
+.news-lead {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
 /* =========================
    CONTACT
 ========================= */
