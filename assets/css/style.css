@@ -420,6 +420,28 @@ img:hover {
     transform: scale(1.02);
 }
 
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* КОЛЬЦО — оставляем как есть */
+.circle.ring img {
+    width: 320px;
+}
+
+/* ИКОНКА — увеличиваем */
+.circle.icon img {
+    width: 260px;
+}
+
+/* ЛОГО — балансируем */
+.circle.logo img {
+    width: 300px;
+}
+
 /* =========================
    ANIMATIONS
 ========================= */
