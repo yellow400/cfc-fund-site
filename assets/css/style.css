@@ -257,7 +257,11 @@ nav.nav-hidden {
     margin-bottom: 60px;
     font-family: 'Playfair Display', serif;
 }
-
+.section-subtitle {
+    font-size: 22px;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
 /* =========================
    HERO
 ========================= */
@@ -276,12 +280,6 @@ nav.nav-hidden {
     font-family: 'Playfair Display', serif;
     font-size: 72px;
     color: #B8ADA0;
-    margin-bottom: 40px;
-}
-
-.section-subtitle {
-    font-size: 22px;
-    max-width: 500px;
     margin-bottom: 40px;
 }
 
