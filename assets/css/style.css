@@ -461,23 +461,30 @@ img:hover {
     left: 50%;
 
     width: 160%;
-    height: 2px;
+    height: 1px;
 
-    transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%);
 
     background: linear-gradient(
-        to right,
-        rgba(59, 10, 42, 0.8) 0%,
-        rgba(59, 10, 42, 0.2) 30%,
-        transparent 50%,
-        rgba(59, 10, 42, 0.2) 70%,
-        rgba(59, 10, 42, 0.8) 100%
-    );
-
-    animation: rotateCounter 25s linear infinite;
+    to right,
+    rgba(59, 10, 42, 0.4) 0%,
+    rgba(59, 10, 42, 0.1) 30%,
+    transparent 50%,
+    rgba(59, 10, 42, 0.1) 70%,
+    rgba(59, 10, 42, 0.4) 100%
+);
+filter: blur(0.6px);
+    animation: rotateLine 20s linear infinite;
     transform-origin: center;
 }
-
+@keyframes rotateLine {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
 /* =========================
    MOBILE
 ========================= */
@@ -488,7 +495,7 @@ img:hover {
     .about-grid,
     .invest-grid,
     .contact-grid,
-    .final-grid {
+        .final-grid {
         grid-template-columns: 1fr;
     }
 
@@ -560,4 +567,55 @@ img:hover {
 
 .back-link.bottom {
     margin-top: 60px;
+}
+
+/* MOVING TEXT */
+.ticker {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.ticker-track {
+    display: inline-block;
+    white-space: nowrap;
+}
+.fast {
+    position: relative;
+    z-index: 2;
+    color: #3B0A2A;
+    font-size: 120px;
+    font-weight: 600;
+
+    animation: scrollFast 20s linear infinite;
+}
+.slow {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: rgba(59, 10, 42, 0.2);
+    font-size: 120px;
+    font-weight: 600;
+
+    animation: scrollSlow 40s linear infinite;
+}
+@keyframes scrollFast {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollSlow {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+.slow {
+    opacity: 0.25;
 }
