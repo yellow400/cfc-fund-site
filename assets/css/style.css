@@ -162,17 +162,36 @@ nav.nav-hidden {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    gap: 20px;
 }
 
 .line {
-    width: 0;
+    width: 80px;
     height: 1px;
     background: #3B0A2A;
-    transition: width 1s ease;
+    opacity: 0.8;
+}
+.line {
+    height: 1px;
+    width: 0;
+    background: linear-gradient(
+        to right,
+        rgba(59, 10, 42, 0),
+        rgba(59, 10, 42, 0.8),
+        rgba(59, 10, 42, 0)
+    );
+    animation: lineGrow 1s ease forwards;
 }
 
-.line.animate {
-    width: 120px;
+@keyframes lineGrow {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 80px;
+        opacity: 0.8;
+    }
 }
 
 .label {
