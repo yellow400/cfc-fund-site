@@ -251,6 +251,12 @@ nav.nav-hidden {
     margin-right: 20px;
     transition: width 0.6s ease;
 }
+.section-title {
+    font-size: 72px;
+    color: #B8ADA0;
+    margin-bottom: 60px;
+    font-family: 'Playfair Display', serif;
+}
 
 /* =========================
    HERO
