@@ -381,6 +381,7 @@ CFC s.r.o., osoba rizikového kapitálu is registered in the CNB register pursua
 <script>
 let lastScroll = 0;
 const nav = document.querySelector("nav");
+const scrollThreshold = 10; // 👈 ключевой момент
 
 window.addEventListener("scroll", function () {
     let currentScroll = window.scrollY;

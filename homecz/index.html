@@ -360,6 +360,7 @@ CFC s.r.o., osoba rizikového kapitálu je zapsána v registru ČNB podle § 15 
 <script>
 let lastScroll = 0;
 const nav = document.querySelector("nav");
+const scrollThreshold = 10; // 👈 ключевой момент
 
 window.addEventListener("scroll", function () {
     let currentScroll = window.scrollY;
