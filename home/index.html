@@ -380,29 +380,38 @@ CFC s.r.o., osoba rizikového kapitálu is registered in the CNB register pursua
 
 <script>
 let lastScroll = 0;
+let ticking = false;
 const nav = document.querySelector("nav");
-const scrollThreshold = 10; // 👈 ключевой момент
 
-window.addEventListener("scroll", function () {
-    let currentScroll = window.scrollY;
+function updateNav(currentScroll) {
 
-    // shrink
-    if (currentScroll > 50) {
-        nav.classList.add("scrolled");
-    } else {
-        nav.classList.remove("scrolled");
+    // всегда показываем вверху
+    if (currentScroll <= 0) {
+        nav.classList.remove("nav-hidden");
+        return;
     }
 
-    // 👇 анти-дёргание
-    if (Math.abs(currentScroll - lastScroll) > scrollThreshold) {
+    // вниз — скрываем
+    if (currentScroll > lastScroll && currentScroll > 120) {
+        nav.classList.add("nav-hidden");
+    } 
+    // вверх — показываем
+    else if (currentScroll < lastScroll) {
+        nav.classList.remove("nav-hidden");
+    }
 
-        if (currentScroll > lastScroll && currentScroll > 100) {
-            nav.classList.add("nav-hidden");
-        } else {
-            nav.classList.remove("nav-hidden");
-        }
+    lastScroll = currentScroll;
+}
 
-        lastScroll = currentScroll;
+window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            updateNav(currentScroll);
+            ticking = false;
+        });
+        ticking = true;
     }
 });
 </script>
