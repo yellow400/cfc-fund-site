@@ -608,7 +608,7 @@ filter: blur(0.6px);
     top: 60px;
     left: 0;
     z-index: 1;
-    color: rgba(59, 10, 42, 0.18);
+    color: rgba(59, 10, 42, 0.38);
     font-size: 120px;
     animation: scrollSlow 70s linear infinite;
     opacity: 0.2;
