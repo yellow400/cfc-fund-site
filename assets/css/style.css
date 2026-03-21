@@ -574,6 +574,7 @@ filter: blur(0.6px);
     position: relative;
     overflow: hidden;
     white-space: nowrap;
+    width: 100%;
 }
 .ticker-track {
     display: inline-block;
@@ -585,19 +586,19 @@ filter: blur(0.6px);
     color: #3B0A2A;
     font-size: 120px;
     font-weight: 600;
-
     animation: scrollFast 20s linear infinite;
+    top: 0;
 }
 .slow {
     position: absolute;
-    top: 0;
+    top: 40px; /* 👈 двигаем вниз */
     left: 0;
-
     color: rgba(59, 10, 42, 0.2);
     font-size: 120px;
     font-weight: 600;
-
     animation: scrollSlow 40s linear infinite;
+    z-index: 1;
+    opacity: 0.15;
 }
 @keyframes scrollFast {
     from {
@@ -610,10 +611,10 @@ filter: blur(0.6px);
 
 @keyframes scrollSlow {
     from {
-        transform: translateX(0);
+        transform: translateX(-50%);
     }
     to {
-        transform: translateX(-50%);
+        transform: translateX(0);
     }
 }
 .slow {
