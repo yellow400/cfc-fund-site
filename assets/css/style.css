@@ -573,8 +573,15 @@ filter: blur(0.6px);
 .ticker {
     position: relative;
     overflow: hidden;
-    width: 100%;
     white-space: nowrap;
+    width: 100vw;
+     mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
 }
 
 .ticker-track {
@@ -601,11 +608,19 @@ filter: blur(0.6px);
 }
 
 @keyframes scrollFast {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 @keyframes scrollSlow {
-    from { transform: translateX(-50%); }
-    to { transform: translateX(0); }
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
