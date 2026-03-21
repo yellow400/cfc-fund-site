@@ -282,6 +282,7 @@ nav.nav-hidden {
 .section-subtitle {
     font-size: 22px;
     max-width: 500px;
+    margin-bottom: 40px;
 }
 
 .hero-right img {
