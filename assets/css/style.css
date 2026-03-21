@@ -572,6 +572,7 @@ filter: blur(0.6px);
 /* MOVING TEXT */
 .ticker {
     position: relative;
+    line-height: 0.9;
     overflow: hidden;
     white-space: nowrap;
     width: 100vw;
@@ -594,6 +595,7 @@ filter: blur(0.6px);
 }
 
 .fast {
+    font-family: 'Playfair Display', serif;
     position: relative;
     z-index: 2;
     color: #2A0620;
@@ -601,16 +603,18 @@ filter: blur(0.6px);
     animation: scrollFast 35s linear infinite;
 }
 .slow {
+    font-family: 'Playfair Display', serif;
     position: absolute;
     top: 60px;
     left: 0;
     z-index: 1;
-    color: rgba(59, 10, 42, 0.08);
+    color: rgba(59, 10, 42, 0.18);
     font-size: 120px;
     animation: scrollSlow 70s linear infinite;
     opacity: 0.2;
     transform: translateY(20px);
     filter: blur(0.5px);
+    mix-blend-mode: multiply;
 }
 
 @keyframes scrollFast {
