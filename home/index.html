@@ -386,23 +386,24 @@ const scrollThreshold = 10; // 👈 ключевой момент
 window.addEventListener("scroll", function () {
     let currentScroll = window.scrollY;
 
-    // shrink эффект
+    // shrink
     if (currentScroll > 50) {
         nav.classList.add("scrolled");
     } else {
         nav.classList.remove("scrolled");
     }
 
-    // hide/show логика
-    if (currentScroll > lastScroll && currentScroll > 100) {
-        // скролл вниз
-        nav.classList.add("nav-hidden");
-    } else {
-        // скролл вверх
-        nav.classList.remove("nav-hidden");
-    }
+    // 👇 анти-дёргание
+    if (Math.abs(currentScroll - lastScroll) > scrollThreshold) {
 
-    lastScroll = currentScroll;
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            nav.classList.add("nav-hidden");
+        } else {
+            nav.classList.remove("nav-hidden");
+        }
+
+        lastScroll = currentScroll;
+    }
 });
 </script>
 <script>
