@@ -583,11 +583,9 @@ filter: blur(0.6px);
         transparent 100%
     );
 }
-
 .ticker-track {
     display: flex;
     width: max-content;
-    padding-left: 100vw;
 }
 .ticker-track span {
     white-space: nowrap;
@@ -614,18 +612,18 @@ filter: blur(0.6px);
 
 @keyframes scrollFast {
     from {
-        transform: translateX(-50%);
+        transform: translateX(0);
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
 @keyframes scrollSlow {
     from {
-        transform: translateX(-50%);
+        transform: translateX(0);
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
