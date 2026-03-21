@@ -279,7 +279,7 @@ nav.nav-hidden {
     margin-bottom: 40px;
 }
 
-.hero-sub {
+.section-subtitle {
     font-size: 22px;
     max-width: 500px;
 }
@@ -379,10 +379,6 @@ nav.nav-hidden {
     font-size: 72px;
     color: #B8ADA0;
     margin-bottom: 20px;
-}
-
-.news-sub {
-    margin-bottom: 60px;
 }
 
 .news-grid {
