@@ -597,7 +597,7 @@ filter: blur(0.6px);
     z-index: 2;
     color: #3B0A2A;
     font-size: 120px;
-    animation: scrollFast 20s linear infinite;
+    animation: scrollFast 35s linear infinite;
 }
 
 .slow {
@@ -607,7 +607,7 @@ filter: blur(0.6px);
     z-index: 1;
     color: rgba(59, 10, 42, 0.2);
     font-size: 120px;
-    animation: scrollSlow 40s linear infinite;
+    animation: scrollSlow 70s linear infinite;
     opacity: 0.2;
 }
 
