@@ -575,13 +575,13 @@ filter: blur(0.6px);
     overflow: hidden;
     white-space: nowrap;
     width: 100vw;
-    /* mask-image: linear-gradient(
+    mask-image: linear-gradient(
         to right,
         transparent 0%,
         black 10%,
         black 90%,
         transparent 100%
-    ); */
+    ); 
 }
 .ticker-track {
     display: flex;
@@ -589,7 +589,7 @@ filter: blur(0.6px);
 }
 .ticker-track span {
     white-space: nowrap;
-    padding-right: 50px; /* зазор между повторами */
+    padding-right: 80px; /* зазор между повторами */
 }
 
 .fast {
@@ -602,12 +602,13 @@ filter: blur(0.6px);
 
 .slow {
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0;
     z-index: 1;
     color: rgba(59, 10, 42, 0.2);
     font-size: 120px;
     animation: scrollSlow 40s linear infinite;
+    opacity: 0.2;
 }
 
 @keyframes scrollFast {
@@ -627,3 +628,8 @@ filter: blur(0.6px);
         transform: translateX(-50%);
     }
 }
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
