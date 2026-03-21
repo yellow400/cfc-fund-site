@@ -576,12 +576,12 @@ filter: blur(0.6px);
     white-space: nowrap;
     width: 100vw;
     mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 25%,
-    black 75%,
-    transparent 100%
-    height: 220px;
+        to right,
+        transparent 0%,
+        black 25%,
+        black 75%,
+        transparent 100%
+        height: 220px;
 );
 }
 .ticker-track {
