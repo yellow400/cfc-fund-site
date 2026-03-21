@@ -575,7 +575,7 @@ filter: blur(0.6px);
     overflow: hidden;
     white-space: nowrap;
     width: 100vw;
-    height: 220px;
+    height: 300px;
     mask-image: linear-gradient(
         to right,
         transparent 0%,
