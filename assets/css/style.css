@@ -596,20 +596,21 @@ filter: blur(0.6px);
 .fast {
     position: relative;
     z-index: 2;
-    color: #3B0A2A;
+    color: #2A0620;
     font-size: 120px;
     animation: scrollFast 35s linear infinite;
 }
-
 .slow {
     position: absolute;
     top: 60px;
     left: 0;
     z-index: 1;
-    color: rgba(59, 10, 42, 0.2);
+    color: rgba(59, 10, 42, 0.08);
     font-size: 120px;
     animation: scrollSlow 70s linear infinite;
     opacity: 0.2;
+    transform: translateY(20px);
+    filter: blur(0.5px);
 }
 
 @keyframes scrollFast {
