@@ -17,6 +17,13 @@
             <img src="/cfc-fund-site/assets/images/main_logo.png" alt="CFC Fund Logo">
         </div>
 
+        <!-- BURGER -->
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <div class="nav-links">
             <a href="#welcome">Úvod</a>
 			<a href="#about">Informace</a>
@@ -418,5 +425,18 @@ function switchLang(lang) {
         window.location.href = "cfc-fund-site/home/index.html" + hash;
     }
 }
+</script>
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+    menu.classList.toggle("active");
+}
+</script>
+<script>
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.getElementById("navLinks").classList.remove("active");
+    });
+});
 </script>
 </body></html>

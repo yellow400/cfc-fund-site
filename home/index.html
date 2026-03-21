@@ -11,19 +11,29 @@
 <div class="container">
 <nav>
     <div class="container nav-inner">
+
         <div class="logo">
             <img src="/cfc-fund-site/assets/images/main_logo.png" alt="CFC Fund">
         </div>
-        <div class="nav-links">
+
+        <!-- BURGER -->
+        <div class="burger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- MENU -->
+        <div class="nav-links" id="navLinks">
             <a href="#welcome">Welcome</a>
             <a href="#about">Information</a>
             <a href="#numbers">Numbers</a>
             <a href="#investments">Investments</a>
-        	<a href="#services">Extra</a>
-            <a href="#news">News</a>
+            <a href="#services">Extra</a>
             <a href="#contact">Contacts</a>
-            <a href="cfc-fund-site/homecz/index.html">CZ</a>            
+            <a href="/homecz/index.html">CZ</a>
         </div>
+
     </div>
 </nav>
 
@@ -441,5 +451,18 @@ function switchLang(lang) {
         window.location.href = "/home" + hash;
     }
 }
+</script>
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+    menu.classList.toggle("active");
+}
+</script>
+<script>
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.getElementById("navLinks").classList.remove("active");
+    });
+});
 </script>
 </body></html>
